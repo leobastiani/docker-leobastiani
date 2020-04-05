@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+    leobastiani:
+        container_name: leobastiani
+        build: .
+        image: ubuntu-leobastiani
+        ports:
+            - "127.0.0.1:2222:22"
+            - "127.0.0.1:3000-3010:3000-3010"
+            - "127.0.0.1:9229:9229"
